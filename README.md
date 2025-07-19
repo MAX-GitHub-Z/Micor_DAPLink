@@ -1,29 +1,6 @@
-# STM32F103C8T6_CMSIS-DAP_SWO
------------------------------
+ [中文](./doc/zh/README_zh.md) | [English](./doc/en/README_en.md)
 
-Based x893's code on: https://github.com/x893/CMSIS-DAP
+![Micor_DAPLink](./Doc/Micor_DAPLink_log.png)
 
-My contribution:
-
-1. Upgrade CMSIS-DAP version to V2.0.0 (HID mode, not WinUSB) .
-2. Enable SWO_UART function(USART1), no SWO_STREAM/SWO_MANCHESTER mode.
-3. CDC function improved(USART2).
-4. Added a Soft-Reset function for Cortex-M.
-5. Added BluePill board support, Remapped or unRemap (refer to Docs).
-6. Added STLINK_V2A, STLINK_V2B board support (refer to Docs).
-7. Minor changes, e.g. LED handling, project files re-group......
- -
-
-Here is the BluePill remapped SWD port in use:
-![alt text](https://github.com/RadioOperator/STM32F103C8T6_CMSIS-DAP_SWO/blob/master/Doc/Bluepill/1.SWD_Remapped.jpg) 
- -
- -
- -
-Check my another repository for USB2.0 High-Speed CMSIS-DAP device, incredible more:
- -
- - https://github.com/RadioOperator/CMSIS-DAP_for_STLINK-V3MINI
- -
- - 
-
-
-
+这是一个Micor DAPLink 项目 该项目在参考[DAPLINK](https://github.com/ARMmbed/DAPLink?tab=readme-ov-file)的源码基础上 基于[STM32F103C8T6_CMSIS-DAP_SW](https://github.com/RadioOperator/STM32F103C8T6_CMSIS-DAP_SWO)项目进行开发
+该项目的目标是 去除DAPLink源码中多余的文件 来实现精简版的DAPLink固件
